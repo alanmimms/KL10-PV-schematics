@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "DEC20")(type "KiCad")(uri "${KIPRJMOD}/DEC20.kicad_sym")(options "")(descr "DECSYSTEM-20 schematic symbols"))
+)

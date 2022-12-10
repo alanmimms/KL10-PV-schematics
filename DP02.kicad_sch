@@ -1,0 +1,15 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 7556c6b7-65ac-413e-a9cd-66bd4b5b10f7)
+
+  (paper "B")
+
+  (title_block
+    (date "10/21/1976")
+    (company "DIGITAL")
+  )
+
+  (lib_symbols
+  )
+
+)
