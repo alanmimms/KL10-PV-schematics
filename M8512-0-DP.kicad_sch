@@ -29,6 +29,18 @@
     )
   )
 
+  (sheet (at 36.195 102.235) (size 21.59 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 37ba04c2-b201-4f29-919c-bcd861d42582)
+    (property "Sheet name" "DP03" (id 0) (at 36.195 101.5234 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "DP03.kicad_sch" (id 1) (at 36.195 119.3296 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
   (sheet (at 32.385 67.31) (size 25.4 14.605) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
@@ -45,9 +57,19 @@
     (path "/" (page "1"))
     (path "/0d0df2ac-f3f7-482e-ba7c-5f666b048a62" (page "2"))
     (path "/e53a1afb-1269-4ccc-9d39-72635457c7f7" (page "3"))
+    (path "/37ba04c2-b201-4f29-919c-bcd861d42582" (page "4"))
   )
 
   (symbol_instances
+    (path "/37ba04c2-b201-4f29-919c-bcd861d42582/3263b06a-f347-437b-94aa-a857004a7ea1"
+      (reference "E4") (unit 1) (value "MC10181") (footprint "")
+    )
+    (path "/37ba04c2-b201-4f29-919c-bcd861d42582/938d047d-ccaa-40b8-b822-1670ea770fee"
+      (reference "E7") (unit 1) (value "MC10109") (footprint "")
+    )
+    (path "/37ba04c2-b201-4f29-919c-bcd861d42582/d079f1e9-2d2b-44e5-ae40-de8d878751b0"
+      (reference "E7") (unit 2) (value "MC10109") (footprint "")
+    )
     (path "/0d0df2ac-f3f7-482e-ba7c-5f666b048a62/0f39e560-9336-4a48-a641-fec45e29a92d"
       (reference "E?") (unit 1) (value "MC10141") (footprint "")
     )
