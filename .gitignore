@@ -1,2 +1,7 @@
 *.bak
 KL10-PV-backups
+*.netlist
+*.net
+M8512-0-DP-backups/
+*.zip
+fp-info-cache

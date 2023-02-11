@@ -1,28 +1,5 @@
 {
   "board": {
-    "design_settings": {
-      "defaults": {
-        "board_outline_line_width": 0.1,
-        "copper_line_width": 0.2,
-        "copper_text_size_h": 1.5,
-        "copper_text_size_v": 1.5,
-        "copper_text_thickness": 0.3,
-        "other_line_width": 0.15,
-        "silk_line_width": 0.15,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15
-      },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
-      "rules": {
-        "min_copper_edge_clearance": 0.0,
-        "solder_mask_clearance": 0.0,
-        "solder_mask_min_width": 0.0
-      },
-      "track_widths": [],
-      "via_dimensions": []
-    },
     "layer_presets": []
   },
   "boards": [],
@@ -225,7 +202,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "unannotated": "error",
@@ -239,7 +216,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "KL10-PV.kicad_pro",
+    "filename": "M8512-0-DP.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -283,13 +260,7 @@
     "drawing": {
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
-      "field_names": [
-        {
-          "name": "Number",
-          "url": false,
-          "visible": true
-        }
-      ],
+      "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -326,9 +297,23 @@
     [
       "ff1968bd-7858-45db-804d-e53b9d38f9da",
       ""
+    ],
+    [
+      "0d0df2ac-f3f7-482e-ba7c-5f666b048a62",
+      "DP01"
+    ],
+    [
+      "e53a1afb-1269-4ccc-9d39-72635457c7f7",
+      "DP02"
+    ],
+    [
+      "37ba04c2-b201-4f29-919c-bcd861d42582",
+      "DP03"
+    ],
+    [
+      "8bf24a80-dffc-49df-8d9b-da527be5fdc9",
+      "DP04"
     ]
   ],
-  "text_variables": {
-    "N": "0"
-  }
+  "text_variables": {}
 }

@@ -2,11 +2,14 @@
 
   (uuid 274d2a99-638b-4480-8249-4d8062bac439)
 
-  (paper "A4")
+  (paper "B")
 
   (title_block
+    (title "DATA PATH AR REGISTER")
     (date "10/21/1976")
+    (rev "A")
     (company "DIGITAL")
+    (comment 1 "M8512-0-DP01")
   )
 
   (lib_symbols
