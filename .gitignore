@@ -6,3 +6,5 @@ M8512-0-DP-backups/
 *.zip
 fp-info-cache
 KiCadVerilog/
+*~
+.*~
