@@ -2,6 +2,8 @@
 
 const fs = require('fs');
 
+const outName = 'backplane.dp.list';
+
 const RE = /"(?<net>[^"<]*)\<(?<pin>[A-F][A-Z][12])\>"/;
 const fileNames = 'DP01,DP02,DP03,DP04'.split(',').map(f => `${f}.kicad_sch`);
 const nets = {};
@@ -28,11 +30,28 @@ fileNames.forEach(fileName => {
 });
 
 
-console.log(Object.keys(nets).sort(pinSort).map(k => `${k}: ${nets[k]}`).join('\n'));
+fs.writeFileSync(outName, `\
+Sorted by pin:
+${Object.keys(nets).sort(pinSort).map(k => `${k}: ${nets[k]}`).join('\n')}
+
+Sorted by signal:
+${Object.entries(nets).sort(signalSort).map(([k, v]) => `${k}: ${v}`).join('\n')}
+`, {
+  encoding: 'utf8',
+  mode: 0o664,
+  flag: 'w',
+});
 
 
 function pinSort(p1, p2) {
   const s1 = p1[0].concat(p1[2], p1[1]);
   const s2 = p2[0].concat(p2[2], p2[1]);
+  return s1 > s2 ? 1 : (s1 == s2 ? 0 : -1);
+}
+
+
+function signalSort(p1, p2) {
+  const s1 = p1[1];
+  const s2 = p2[1];
   return s1 > s2 ? 1 : (s1 == s2 ? 0 : -1);
 }
