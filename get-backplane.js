@@ -30,9 +30,18 @@ fileNames.forEach(fileName => {
 });
 
 
+let lastSplit = '';
 fs.writeFileSync(outName, `\
-Sorted by pin:
-${Object.keys(nets).sort(pinSort).map(k => `${k}: ${nets[k]}`).join('\n')}
+Sorted by pin:\
+${Object.keys(nets)
+  .sort(pinSort)
+  .map(k => {
+    const split = k[0] + k[2];
+    const s = `${lastSplit !== split ? '\n' : ''}${k}: ${nets[k]}`;
+    lastSplit = split;
+    return s;
+  })
+  .join('\n')}
 
 Sorted by signal:
 ${Object.entries(nets).sort(signalSort).map(([k, v]) => `${k}: ${v}`).join('\n')}
