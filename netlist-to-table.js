@@ -15,8 +15,19 @@ const netList = nets
 	const j1 = net.node.find(node => node.ref == 'J1');
 	if (!j1) return null;
 	if (!j1.pintype || NC.test(j1.pintype)) return null;
-	const name = net.name.replace(/\s*<[^>]*>/g, '');
-	if (name.length === 0) return null;
+
+	// If we end up with a name that starts with '<' it was a
+	// unnamed backplane pin reference. Use the ref and
+	// pinfunction of the first node name of this net that is
+	// not J1 instead.
+	let name;
+	if (net.name[0] === '<') {
+	  const nameNode = net.node.find(node => node.ref != 'J1');
+	  if (nameNode) name = `${nameNode.ref}-${nameNode.pinfunction}`;
+	} else {
+	  name = net.name.replace(/\s*<[^>]*>/g, '');
+	}
+
 	return `${j1.pinfunction}: "${name}",`
       })
       .filter(e => e !== null)
