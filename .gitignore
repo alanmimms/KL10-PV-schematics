@@ -8,3 +8,4 @@ fp-info-cache
 KiCadVerilog/
 *~
 .*~
+node_modules

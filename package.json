@@ -1,0 +1,11 @@
+{
+  "name": "KL10-PV",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alanmimms/KL10-PV.git",
+  "author": "Alan Mimms <alanmimms@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "kicad-netlist-to-json": "^0.0.9"
+  }
+}

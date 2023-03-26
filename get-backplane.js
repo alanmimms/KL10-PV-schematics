@@ -5,7 +5,7 @@ const fs = require('fs');
 const outName = 'backplane.dp.list';
 
 const RE = /"(?<net>[^"<]*)\<(?<pin>[A-F][A-Z][12])\>"/;
-const fileNames = 'DP01,DP02,DP03,DP04'.split(',').map(f => `${f}.kicad_sch`);
+const fileNames = 'DP01,DP02,DP03,DP04,M8512-0-DP'.split(',').map(f => `${f}.kicad_sch`);
 const nets = {};
 
 
