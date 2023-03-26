@@ -15,8 +15,8 @@ const netList = nets
 	const j1 = net.node.find(node => node.ref == 'J1');
 	if (!j1) return null;
 	if (!j1.pintype || NC.test(j1.pintype)) return null;
-	const name = net.name;
-//	console.error(`${util.inspect(j1)}`);
+	const name = net.name.replace(/\s*<[^>]*>/g, '');
+	if (name.length === 0) return null;
 	return `${j1.pinfunction}: "${name}",`
       })
       .filter(e => e !== null)
