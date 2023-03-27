@@ -6246,6 +6246,12 @@
     (uuid fee792ad-d512-41c5-85bc-c8da15528aff)
   )
 
+  (text "TODO: Change net names for <xxn> labels to match ${...} labels added in sheets."
+    (at 78.105 97.79 0)
+    (effects (font (size 5.08 5.08)) (justify left bottom))
+    (uuid 18884369-7558-40f8-a5e7-2b22bcf550c9)
+  )
+
   (global_label "V-5.2" (shape input) (at 327.66 33.655 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 01b12922-92ba-4406-933a-fc7e092e52c5)
