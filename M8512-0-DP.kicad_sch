@@ -7986,7 +7986,7 @@
 
   (sheet (at 15.875 19.685) (size 18.415 11.43) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 17 0 255 1.0000))
     (uuid 0d0df2ac-f3f7-482e-ba7c-5f666b048a62)
     (property "Sheet name" "DP01" (id 0) (at 15.875 18.9734 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -7998,7 +7998,7 @@
 
   (sheet (at 15.875 52.705) (size 17.78 13.335) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 26 0 255 1.0000))
     (uuid 37ba04c2-b201-4f29-919c-bcd861d42582)
     (property "Sheet name" "DP03" (id 0) (at 15.875 51.9934 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -8010,7 +8010,7 @@
 
   (sheet (at 18.415 72.39) (size 12.7 10.16) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 0 10 255 1.0000))
     (uuid 8bf24a80-dffc-49df-8d9b-da527be5fdc9)
     (property "Sheet name" "DP04" (id 0) (at 18.415 71.6784 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -8022,7 +8022,7 @@
 
   (sheet (at 16.51 36.83) (size 15.24 10.16) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 12 0 255 1.0000))
     (uuid e53a1afb-1269-4ccc-9d39-72635457c7f7)
     (property "Sheet name" "DP02" (id 0) (at 16.51 36.1184 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
