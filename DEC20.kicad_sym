@@ -496,7 +496,7 @@
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 0 1.905 0)
-      (effects (font (size 1.27 1.27)))
+      (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
