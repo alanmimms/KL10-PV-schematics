@@ -8,10 +8,11 @@ const BP = require('./backplane.js');
 const pinLetters = `A,C,D,E,F,J,K,L,M,N,P,R,S,V`.split(',');
 
 const pinList = 'A,B,C,D,E,F'
-      .split(',')
-      .map(section => ['1', '2']
-	   .map(side => pinLetters
-		.map(letter => `${section}${letter}${side}`)))
+	.split(',')
+	.map(section => ['1', '2']
+	     .map(side => pinLetters
+		  .map(letter => `${section}${letter}${side}`)))
+      .flat(2);
 
 console.log('pinList=', util.inspect(pinList));
 
