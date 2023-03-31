@@ -6,6 +6,7 @@
   "author": "Alan Mimms <alanmimms@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "kicad-netlist-to-json": "^0.0.9"
+    "kicad-netlist-to-json": "^0.0.9",
+    "pegjs": "^0.10.0"
   }
 }

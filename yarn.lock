@@ -16,6 +16,11 @@ kicad-netlist-to-json@^0.0.9:
     ramda "^0.13.0"
     s-expression "^3.0.1"
 
+pegjs@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/pegjs/-/pegjs-0.10.0.tgz#cf8bafae6eddff4b5a7efb185269eaaf4610ddbd"
+  integrity sha512-qI5+oFNEGi3L5HAxDwN2LA4Gg7irF70Zs25edhjld9QemOgp0CbvMtbFcMvFtEo1OityPrcCzkQFB8JP/hxgow==
+
 ramda@^0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.13.0.tgz#2fdca73238677c82fd75afa9191b1a747343a36c"

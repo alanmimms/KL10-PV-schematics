@@ -92,15 +92,32 @@ module.exports = {
 const BP = module.exports;
 
 // Decorate each slot with its pin definitions if they exist as, e.g.,
-// module of name like M8512.js.
+// module of name like M8512.js. During this process, substitute the
+// values of the `vars` list in the signal names.
 BP.slots.forEach(slot => {
 
   if (slot) {
     const modName = `./${slot.dec}.js`;
 
     if (fs.existsSync(modName)) {
-      const pins = require(modName);
-      if (pins) slot.pins = pins;
+      const pinsTemplate = require(modName);
+
+      if (pins) {
+	const pins = { ...pinsTemplate }; // Shallow clone
+	slot.pins = pins;
+
+	// Replace references to the names in `varName` in each signal
+	// with the value for the variable and evaluate and substitute
+	// the result of any expressions in the result. XXX
+	pins = Object.entries(pins).reduce((cur, [name, signal]) => {
+	  cur[name] = substituteAndEvaluate(signal, pins.vars);
+	  return cur;
+	}, {});
+      }
     }
   }
 });
+
+
+function substituteAndEvaluate(signal, vars) {
+}
