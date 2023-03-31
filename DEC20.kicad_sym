@@ -492,7 +492,7 @@
     )
   )
   (symbol "KL10_6-bay_backplane_connector" (pin_numbers hide) (in_bom yes) (on_board yes)
-    (property "Reference" "J" (id 0) (at -0.635 -1.27 0)
+    (property "Reference" "P" (id 0) (at -0.635 -1.27 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 0 1.905 0)
