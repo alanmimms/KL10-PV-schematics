@@ -13,11 +13,11 @@
   )
 
   (lib_symbols
-    (symbol "DEC20:KL10_6-bay_backplane_connector" (pin_numbers hide) (in_bom yes) (on_board yes)
+    (symbol "DEC20:KL10_6-bay_backplane_edge_connector" (pin_numbers hide) (in_bom yes) (on_board yes)
       (property "Reference" "P" (id 0) (at -0.635 -1.27 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 0 1.905 0)
+      (property "Value" "KL10_6-bay_backplane_edge_connector" (id 1) (at 0 1.905 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -29,13 +29,13 @@
       (property "ki_locked" "" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)))
       )
-      (symbol "KL10_6-bay_backplane_connector_0_1"
+      (symbol "KL10_6-bay_backplane_edge_connector_0_1"
         (rectangle (start -5.08 0) (end 3.81 -48.26)
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
       )
-      (symbol "KL10_6-bay_backplane_connector_1_0"
+      (symbol "KL10_6-bay_backplane_edge_connector_1_0"
         (pin unspecified line (at -7.62 -3.81 0) (length 2.54)
           (name "AA1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -181,7 +181,7 @@
           (number "9" (effects (font (size 1.27 1.27))))
         )
       )
-      (symbol "KL10_6-bay_backplane_connector_2_0"
+      (symbol "KL10_6-bay_backplane_edge_connector_2_0"
         (pin unspecified line (at -7.62 -3.81 0) (length 2.54)
           (name "BA1" (effects (font (size 1.27 1.27))))
           (number "37" (effects (font (size 1.27 1.27))))
@@ -327,7 +327,7 @@
           (number "72" (effects (font (size 1.27 1.27))))
         )
       )
-      (symbol "KL10_6-bay_backplane_connector_3_0"
+      (symbol "KL10_6-bay_backplane_edge_connector_3_0"
         (pin unspecified line (at 6.35 -36.83 180) (length 2.54)
           (name "CR2" (effects (font (size 1.27 1.27))))
           (number "100" (effects (font (size 1.27 1.27))))
@@ -473,7 +473,7 @@
           (number "99" (effects (font (size 1.27 1.27))))
         )
       )
-      (symbol "KL10_6-bay_backplane_connector_4_0"
+      (symbol "KL10_6-bay_backplane_edge_connector_4_0"
         (pin unspecified line (at -7.62 -3.81 0) (length 2.54)
           (name "DA1" (effects (font (size 1.27 1.27))))
           (number "109" (effects (font (size 1.27 1.27))))
@@ -619,7 +619,7 @@
           (number "144" (effects (font (size 1.27 1.27))))
         )
       )
-      (symbol "KL10_6-bay_backplane_connector_5_0"
+      (symbol "KL10_6-bay_backplane_edge_connector_5_0"
         (pin unspecified line (at -7.62 -3.81 0) (length 2.54)
           (name "EA1" (effects (font (size 1.27 1.27))))
           (number "145" (effects (font (size 1.27 1.27))))
@@ -765,7 +765,7 @@
           (number "180" (effects (font (size 1.27 1.27))))
         )
       )
-      (symbol "KL10_6-bay_backplane_connector_6_0"
+      (symbol "KL10_6-bay_backplane_edge_connector_6_0"
         (pin unspecified line (at -7.62 -3.81 0) (length 2.54)
           (name "FA1" (effects (font (size 1.27 1.27))))
           (number "181" (effects (font (size 1.27 1.27))))
@@ -3368,11 +3368,11 @@
     )
   )
 
-  (symbol (lib_id "DEC20:KL10_6-bay_backplane_connector") (at 230.505 39.37 0) (unit 4)
+  (symbol (lib_id "DEC20:KL10_6-bay_backplane_edge_connector") (at 230.505 39.37 0) (unit 4)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0c78f329-fd68-4123-b495-2168e24db530)
     (property "Reference" "P1" (id 0) (at 229.87 40.64 0))
-    (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 230.505 37.465 0)
+    (property "Value" "KL10_6-bay_backplane_edge_connector" (id 1) (at 230.505 37.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 230.505 39.37 0)
@@ -3419,11 +3419,11 @@
     (pin "144" (uuid df1e7c7f-a0f3-4607-8691-da9a9a81f415))
   )
 
-  (symbol (lib_id "DEC20:KL10_6-bay_backplane_connector") (at 310.515 173.355 0) (unit 6)
+  (symbol (lib_id "DEC20:KL10_6-bay_backplane_edge_connector") (at 310.515 173.355 0) (unit 6)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0ffd0657-b8b3-42fe-959a-da1e96461cb2)
     (property "Reference" "P1" (id 0) (at 309.88 174.625 0))
-    (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 310.515 171.45 0)
+    (property "Value" "KL10_6-bay_backplane_edge_connector" (id 1) (at 310.515 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 310.515 173.355 0)
@@ -3470,11 +3470,11 @@
     (pin "216" (uuid 1b1102db-c3e7-4cc0-8856-f663d59f2e64))
   )
 
-  (symbol (lib_id "DEC20:KL10_6-bay_backplane_connector") (at 253.365 102.235 0) (unit 5)
+  (symbol (lib_id "DEC20:KL10_6-bay_backplane_edge_connector") (at 253.365 102.235 0) (unit 5)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 464f3d01-8884-43d6-9760-374ae99b1da6)
     (property "Reference" "P1" (id 0) (at 252.73 103.505 0))
-    (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 253.365 100.33 0)
+    (property "Value" "KL10_6-bay_backplane_edge_connector" (id 1) (at 253.365 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 253.365 102.235 0)
@@ -3521,11 +3521,11 @@
     (pin "180" (uuid 0b63bdba-b965-4681-b288-fb3c8f1a7d42))
   )
 
-  (symbol (lib_id "DEC20:KL10_6-bay_backplane_connector") (at 118.11 175.895 0) (unit 3)
+  (symbol (lib_id "DEC20:KL10_6-bay_backplane_edge_connector") (at 118.11 175.895 0) (unit 3)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 8000e172-8e92-4944-982e-ef0ebd64801d)
     (property "Reference" "P1" (id 0) (at 117.475 177.165 0))
-    (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 118.11 173.99 0)
+    (property "Value" "KL10_6-bay_backplane_edge_connector" (id 1) (at 118.11 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 118.11 175.895 0)
@@ -3572,11 +3572,11 @@
     (pin "99" (uuid 540be3d7-079a-46a6-bf27-c3bc4f00c4fb))
   )
 
-  (symbol (lib_id "DEC20:KL10_6-bay_backplane_connector") (at 116.205 101.6 0) (unit 2)
+  (symbol (lib_id "DEC20:KL10_6-bay_backplane_edge_connector") (at 116.205 101.6 0) (unit 2)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c5fce6b4-60ff-4b07-ab84-c3a8a989af40)
     (property "Reference" "P1" (id 0) (at 115.57 102.87 0))
-    (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 116.205 99.695 0)
+    (property "Value" "KL10_6-bay_backplane_edge_connector" (id 1) (at 116.205 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 116.205 101.6 0)
@@ -3623,11 +3623,11 @@
     (pin "72" (uuid 3f58d85c-461e-4651-8416-3b51a2718728))
   )
 
-  (symbol (lib_id "DEC20:KL10_6-bay_backplane_connector") (at 123.19 21.59 0) (unit 1)
+  (symbol (lib_id "DEC20:KL10_6-bay_backplane_edge_connector") (at 123.19 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid eba7ac88-af58-4217-ae9d-28c6cf72a139)
     (property "Reference" "P1" (id 0) (at 122.555 22.86 0))
-    (property "Value" "KL10_6-bay_backplane_connector" (id 1) (at 123.19 19.685 0)
+    (property "Value" "KL10_6-bay_backplane_edge_connector" (id 1) (at 123.19 19.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 123.19 21.59 0)
@@ -4065,22 +4065,22 @@
       (reference "E72") (unit 1) (value "10147") (footprint "")
     )
     (path "/eba7ac88-af58-4217-ae9d-28c6cf72a139"
-      (reference "P1") (unit 1) (value "KL10_6-bay_backplane_connector") (footprint "")
+      (reference "P1") (unit 1) (value "KL10_6-bay_backplane_edge_connector") (footprint "")
     )
     (path "/c5fce6b4-60ff-4b07-ab84-c3a8a989af40"
-      (reference "P1") (unit 2) (value "KL10_6-bay_backplane_connector") (footprint "")
+      (reference "P1") (unit 2) (value "KL10_6-bay_backplane_edge_connector") (footprint "")
     )
     (path "/8000e172-8e92-4944-982e-ef0ebd64801d"
-      (reference "P1") (unit 3) (value "KL10_6-bay_backplane_connector") (footprint "")
+      (reference "P1") (unit 3) (value "KL10_6-bay_backplane_edge_connector") (footprint "")
     )
     (path "/0c78f329-fd68-4123-b495-2168e24db530"
-      (reference "P1") (unit 4) (value "KL10_6-bay_backplane_connector") (footprint "")
+      (reference "P1") (unit 4) (value "KL10_6-bay_backplane_edge_connector") (footprint "")
     )
     (path "/464f3d01-8884-43d6-9760-374ae99b1da6"
-      (reference "P1") (unit 5) (value "KL10_6-bay_backplane_connector") (footprint "")
+      (reference "P1") (unit 5) (value "KL10_6-bay_backplane_edge_connector") (footprint "")
     )
     (path "/0ffd0657-b8b3-42fe-959a-da1e96461cb2"
-      (reference "P1") (unit 6) (value "KL10_6-bay_backplane_connector") (footprint "")
+      (reference "P1") (unit 6) (value "KL10_6-bay_backplane_edge_connector") (footprint "")
     )
     (path "/8bf24a80-dffc-49df-8d9b-da527be5fdc9/c5619bc7-731c-444c-b663-3984c1fa4081"
       (reference "R5001") (unit 1) (value "R") (footprint "")
