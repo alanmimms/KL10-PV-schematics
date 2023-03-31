@@ -17,7 +17,7 @@ module.exports = {
   name: "KL10PV",
   hasCACHE,
   serialNumber: 0o1234,
-  slot: [
+  slots: [
     null,							// 0 There is no slot #0
     null,							// 1 cables BC11A M919, BC20C M9006, BC20C M9006
     null,							// 2 cables BC20C M9006, BC20C M9006, spare
