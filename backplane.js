@@ -1,5 +1,6 @@
 'use strict';
 
+const fs = require('fs');
 const {hasCACHE} = require('./options.js');
 
 module.exports = {
@@ -87,3 +88,19 @@ module.exports = {
     {module: "scd", dec: "M8524", vars: {N: 2}},		// 54
   ],
 };
+
+const BP = module.exports;
+
+// Decorate each slot with its pin definitions if they exist as, e.g.,
+// module of name like M8512.js.
+BP.slots.forEach(slot => {
+
+  if (slot) {
+    const modName = `./${slot.dec}.js`;
+
+    if (fs.existsSync(modName)) {
+      const pins = require(modName);
+      if (pins) slot.pins = pins;
+    }
+  }
+});

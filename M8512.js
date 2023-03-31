@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-  AR1: '# ${N+0}',
+  AR1: '# ${N+0} H',
   AP1: '# ${N+1} H',
   BA1: '# ${N+2} H',
   AP2: '# ${N+3} H',
