@@ -103,7 +103,7 @@ const BP = module.exports;
 // Decorate each slot with its pin definitions if they exist as, e.g.,
 // module of name like M8512.js. During this process, substitute the
 // values of the `vars` list in the signal names.
-BP.slots.forEach(slot => {
+BP.slots.forEach((slot, slotNumber) => {
 
   if (slot) {
     const slotVars = {...slot.vars, ...BP.globalVars};
@@ -113,6 +113,8 @@ BP.slots.forEach(slot => {
       const pinsTemplate = require(modName);
 
       if (pinsTemplate) {
+	console.log(`// SLOT ${slotNumber}`);
+
 	// Replace references to the names in `varName` in each signal
 	// with the value for the variable and evaluate and substitute
 	// the result of any expressions in the result. XXX
@@ -126,8 +128,8 @@ ${pegutil.errorMessage(parseResult.error, true).replace(/^/mg, 'ERROR: ')}`);
 	  }
 
 	  console.log(`
-signal='${signal}', vars=${util.inspect(slotVars)}
-result='${parseResult.ast}'`);
+${name}: signal='${signal}', vars=${util.inspect(slotVars)}
+     result='${parseResult.ast}'`);
 	  cur[name] = parseResult.ast;
 	  return cur;
 	}, {});
