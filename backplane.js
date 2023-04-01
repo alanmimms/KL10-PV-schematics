@@ -128,9 +128,14 @@ ERROR: signal syntax
 ${pegutil.errorMessage(parseResult.error, true).replace(/^/mg, 'ERROR: ')}`);
 	  }
 
-	  console.log(`
+	  if (false) {		// Verbose
+	    console.log(`
 ${name}: signal='${signal}', vars=${util.inspect(slotVars)}
      result='${parseResult.ast}'`);
+	  } else {
+	    console.log(`${name}: ${parseResult.ast}`);
+	  }
+
 	  signal = parseResult.ast;
 	  cur[name] = signal;
 	  if (!signals[signal]) signals[signal] = [];
