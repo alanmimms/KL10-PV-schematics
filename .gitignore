@@ -10,3 +10,4 @@ KiCadVerilog/
 .*~
 node_modules
 z
+backplane.out
