@@ -98,6 +98,7 @@ module.exports = {
   ],
 };
 
+const signals = {};
 const BP = module.exports;
 
 // Decorate each slot with its pin definitions if they exist as, e.g.,
@@ -130,10 +131,26 @@ ${pegutil.errorMessage(parseResult.error, true).replace(/^/mg, 'ERROR: ')}`);
 	  console.log(`
 ${name}: signal='${signal}', vars=${util.inspect(slotVars)}
      result='${parseResult.ast}'`);
-	  cur[name] = parseResult.ast;
+	  signal = parseResult.ast;
+	  cur[name] = signal;
+	  if (!signals[signal]) signals[signal] = [];
+	  signals[signal].push({
+	    slot,
+	    slotNumber,
+	    pin: name,
+	  });
 	  return cur;
 	}, {});
       }
     }
   }
 });
+
+
+console.log(`
+
+Signals:
+${Object.entries(signals)
+  .map(([signal, o]) => `${signal}: ${o.map(sp => `${sp.slot.module}.${sp.slotNumber}.${sp.pin}`)}`).join('\n')}
+`);
+
