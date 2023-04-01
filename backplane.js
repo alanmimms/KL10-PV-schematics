@@ -8,6 +8,8 @@ const pegutil = require('pegjs-util');
 const grammar = fs.readFileSync('./expr.pegjs', 'utf8');
 const parser = pegjs.generate(grammar, {trace: false} );
 
+const naturalSortCollator = new Intl.Collator('en', {numeric: true});
+
 
 const {hasCACHE} = require('./options.js');
 
@@ -156,6 +158,11 @@ console.log(`
 
 Signals:
 ${Object.entries(signals)
+  .sort(sigEntSort)
   .map(([signal, o]) => `${signal}: ${o.map(sp => `${sp.slot.module}.${sp.slotNumber}.${sp.pin}`)}`).join('\n')}
 `);
 
+
+function sigEntSort(s1, s2) {
+  return naturalSortCollator.compare(s1[0], s2[0]);
+}
