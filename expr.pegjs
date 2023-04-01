@@ -9,10 +9,10 @@
 }
 
 SIGNAL
-  = o:( s:SIGNALNAME / e:CONDSUBST / e:SUBST )+	{ return LOG('SIGNAL', o.flat().join('')); }
+  = o:( s:SYMSEG / e:CONDSUBST / e:SUBST )+	{ return LOG('SIGNAL', o.flat().join('')); }
 
 CONDSUBST
-  = '$' '{' e:EXPR a:( ',' s:NOTCURLYNOTCOMMA { return s} )+ '}'
+  = '$' '{' e:EXPR a:( ',' s:SIGNAL { return s; } )+ '}'
 						{ return LOG('CONDSUBST', a[e-1]); }
 
 SUBST
@@ -41,8 +41,8 @@ VAR
 NUMBER
   = _ n:[0-9]+ _				{ return LOG('NUMBER', parseInt(n.join(''), 10)); }
 
-NOTCURLYNOTCOMMA
-  = $[^},]+
+SYMSEG
+  = $[^$},]+
 
 SIGNALNAME
   = n:$([-A-Za-z_#=<>.!~ ] [-A-Za-z0-9_#=<>.!~ ]* )
