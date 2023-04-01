@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "kicad-netlist-to-json": "^0.0.9",
-    "pegjs": "^0.10.0"
+    "pegjs": "^0.10.0",
+    "pegjs-util": "^1.4.21"
   }
 }

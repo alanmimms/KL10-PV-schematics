@@ -1,6 +1,14 @@
 'use strict';
 
 const fs = require('fs');
+const util = require('util');
+const pegjs = require('pegjs');
+const pegutil = require('pegjs-util');
+
+const grammar = fs.readFileSync('./expr.pegjs', 'utf8');
+const parser = pegjs.generate(grammar, {trace: false} );
+
+
 const {hasCACHE} = require('./options.js');
 
 module.exports = {
@@ -18,6 +26,7 @@ module.exports = {
   name: "KL10PV",
   hasCACHE,
   serialNumber: 0o1234,
+  globalVars: {B: 1},
   slots: [
     null,							// 0 There is no slot #0
     null,							// 1 cables BC11A M919, BC20C M9006, BC20C M9006
@@ -97,27 +106,32 @@ const BP = module.exports;
 BP.slots.forEach(slot => {
 
   if (slot) {
+    const slotVars = {...slot.vars, ...BP.globalVars};
     const modName = `./${slot.dec}.js`;
 
     if (fs.existsSync(modName)) {
       const pinsTemplate = require(modName);
 
-      if (pins) {
-	const pins = { ...pinsTemplate }; // Shallow clone
-	slot.pins = pins;
-
+      if (pinsTemplate) {
 	// Replace references to the names in `varName` in each signal
 	// with the value for the variable and evaluate and substitute
 	// the result of any expressions in the result. XXX
-	pins = Object.entries(pins).reduce((cur, [name, signal]) => {
-	  cur[name] = substituteAndEvaluate(signal, pins.vars);
+	slot.pins = Object.entries(pinsTemplate).reduce((cur, [name, signal]) => {
+	  const parseResult = pegutil.parse(parser, signal, {vars: slotVars});
+
+	  if (parseResult.error !== null) {
+	    console.error(`\
+ERROR: signal syntax
+${pegutil.errorMessage(parseResult.error, true).replace(/^/mg, 'ERROR: ')}`);
+	  }
+
+	  console.log(`
+signal='${signal}', vars=${util.inspect(slotVars)}
+result='${parseResult.ast}'`);
+	  cur[name] = parseResult.ast;
 	  return cur;
 	}, {});
       }
     }
   }
 });
-
-
-function substituteAndEvaluate(signal, vars) {
-}
