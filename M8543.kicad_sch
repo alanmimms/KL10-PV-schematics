@@ -1,0 +1,97 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid c801d42e-dd94-493e-bd2f-6c3ddad43f55)
+
+  (paper "C")
+
+  (title_block
+    (title "EBOX CONTROL #1 SPEC/FUNC & DIAG")
+    (date "1977-01-25")
+    (company "DIGITAL EQUIPMENT CORPORATION")
+    (comment 1 "M8543-0-0")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 19.685 20.32) (size 15.24 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 255 1.0000))
+    (uuid 69c52ca7-b898-4fa8-b83f-12c50fbcea1a)
+    (property "Sheet name" "CTL1" (id 0) (at 19.685 19.6084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "CTL1.kicad_sch" (id 1) (at 19.685 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a" (page "2"))
+  )
+
+  (symbol_instances
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/cefae66d-34e2-4bcd-9328-e7f00548529d"
+      (reference "E12") (unit 1) (value "10117") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/c5d1221a-4ba9-4398-9726-6159c03bf385"
+      (reference "E12") (unit 2) (value "10117") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/449b82b0-cb51-46f2-bbbb-1f14793ac420"
+      (reference "E16") (unit 1) (value "MC10105") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/7a3acd0c-a858-44d1-b03e-a438a3246f2d"
+      (reference "E16") (unit 3) (value "MC10105") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/249d22f6-950e-42db-9380-1289c2034726"
+      (reference "E18") (unit 1) (value "MC10164") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/97affd60-375f-42ce-b07e-8f2f409d7e73"
+      (reference "E20") (unit 1) (value "MC10101") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/c86fbcdc-34a1-4f52-b663-22ac33cfefe3"
+      (reference "E21") (unit 1) (value "10161") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/ee9f3762-bcae-422f-a051-a7cce51f0205"
+      (reference "E22") (unit 1) (value "MC10164") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/079ed3a6-cf94-4cec-8c29-05a30b238d5f"
+      (reference "E23") (unit 1) (value "10162") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/84eb1363-4d95-4a40-9aef-47f2333f56aa"
+      (reference "E24") (unit 1) (value "10162") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/7f74e3b3-0eeb-4455-a766-15862cddc46c"
+      (reference "E25") (unit 1) (value "10162") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/36e59656-cc24-4623-a00b-3097bea8834f"
+      (reference "E26") (unit 1) (value "10162") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/e6f4f9fb-3dd2-4ca3-99c8-863181a8a1ea"
+      (reference "E28") (unit 2) (value "MC10109") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/f12901ee-ceb5-4210-9985-d2f4d6b12cf4"
+      (reference "E30") (unit 1) (value "MC10101") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/a341a2d7-3b60-4f65-bd37-3897c4bbe4f1"
+      (reference "E30") (unit 3) (value "MC10101") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/f0d0054e-5492-48ca-80aa-df60ff998f58"
+      (reference "E30") (unit 4) (value "MC10101") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/f8cc5b18-b228-4cb1-b40a-186bf5591314"
+      (reference "E34") (unit 1) (value "MC10164") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/907a6fc4-1982-403f-9398-cc6e04ebd899"
+      (reference "E41") (unit 1) (value "MC10164") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/421741af-6139-4dbe-8ed5-198e6633a798"
+      (reference "E42") (unit 1) (value "MC10164") (footprint "")
+    )
+    (path "/69c52ca7-b898-4fa8-b83f-12c50fbcea1a/ffe84120-3b29-4390-aa84-f359bc894dda"
+      (reference "E?") (unit 2) (value "MC10101") (footprint "")
+    )
+  )
+)
